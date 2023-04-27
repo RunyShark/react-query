@@ -2,7 +2,7 @@ import { useQueryPokemons } from '../hooks/useQueryPokemons';
 
 export const ReactQuery = () => {
   const { query } = useQueryPokemons(50);
-console.log(query)
+
   if (query.isError) {
     return <h1>Error</h1>;
   }
